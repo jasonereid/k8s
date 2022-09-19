@@ -11,3 +11,4 @@ kubectl create - creates a new K8s resource
 
 kubectl delete - deletes a particular resource
 
+kubectl get pods - gets the current status of your pods
