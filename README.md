@@ -1,14 +1,23 @@
-# k8s
-Kubernetes administration and security
+# Kubernetes administration and security
 
-kubectl - controls the Kubernetes cluster
+## Kubectl - Command Line Cheat Sheet
 
-kubectl logs - gets logs for the cluster
+##### Add or remove stuff
+kubectl create - *creates resources, add -f file.yaml to create from file*
+kubectl delete - *deletes resources*
+kubectl apply -f ./manifest.yaml - *manifests can be yaml, yml, and .json*
 
-kubectl create - creates a new K8s resource
-    
-    kubectl create -f 1.1basic_k8_pod.yaml
+##### Find and view resources
+kubectl get pods - *gets the status of your pods*
+kubectl get services 
+kubectl get nodes
+kubectl describe pods
 
-kubectl delete - deletes a particular resource
+##### Logs
+kubectl logs 
+kubectl logs my-k8-pod
+kubectl top pod my-k8-pod --sort-by=cpu
 
-kubectl get pods - gets the current status of your pods
+
+kubectl config - *allows you to see and change which cluster you are communicating with*
+
